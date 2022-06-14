@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h1 style="color:green;">Authenticated</h1>
+
+
+    <form asp-controller="Home" asp-action="SignOut">
+        <button type="submit" name="signOutType" value="app">Sign Out</button>
+        <button type="submit" name="signOutType" value="all">Sign Out Completely</button>
+    </form>
+
+    <form asp-controller="Home" asp-action="ReChallenge">
+            <button type="submit">ReChallenge (Microsoft)</button>
+    </form>
+
+    <p>@User.Identity.Name</p>
+
+    <p><a asp-action="Privacy">Privacy (Authorized section)</a></p>
+}
+else
+{
+    <h1 style="color:indianred;">Not Authenticated</h1>
+    <form asp-controller="Home" asp-action="SignIn">
+        <button type="submit">Sign In (Microsoft)</button>
+    </form>
+}

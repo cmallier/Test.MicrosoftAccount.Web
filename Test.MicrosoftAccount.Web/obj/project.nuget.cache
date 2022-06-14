@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9Ia9QO9hlmpiQeoGyNHC2JA7kbskCMZQsvxCfnYb3IEWL4r0TOn8ETFF/054xKefQKmDtVRO+vs3uZlfFj5zmA==",
+  "success": true,
+  "projectFilePath": "C:\\GitHub\\Test.MicrosoftAccount\\Test.MicrosoftAccount.Web\\Test.MicrosoftAccount.Web\\Test.MicrosoftAccount.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ChristianMallier\\.nuget\\packages\\microsoft.aspnetcore.authentication.microsoftaccount\\3.1.26\\microsoft.aspnetcore.authentication.microsoftaccount.3.1.26.nupkg.sha512"
+  ],
+  "logs": []
+}
